@@ -1,0 +1,26 @@
+
+
+package factorial;
+import java.util.Scanner;
+
+public class Factorial {
+
+    public static void main(String[] args) {
+       Scanner  s =new Scanner (System.in);
+        System.out.println(" input angka faktorial :");
+        int angka=s.nextInt();
+        int fakto=1;
+        if(angka>0)
+        {
+            for(int i=1;i <angka ;i++)
+                fakto=fakto*(angka-i);
+                fakto=fakto*angka;}
+       
+        else
+            fakto=1;
+            System.out.println("hasil :" + fakto);
+        
+       
+    }
+    
+}
